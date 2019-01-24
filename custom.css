@@ -16,28 +16,26 @@ limitations under the License.
 
 :root {
    /* Modify these to change your theme colors: */
-   --primary: #09F;
-   --text: #DDD;
-   --background: #111;
-   --background-elevated: #222;
+     --primary: #00C848;
+     --primary-dark: #00793A;
+     --primary-light: #2EDF69;
+     --bg-contrast-high: #FFFFFF;
+     --bg-contrast-medium: rgba(255, 255, 255, 0.75);
+     --bg: #162130;
+     --bg-accent: #1B283B;
+     --surface: #2C3D54;
 
    /* These should be less important: */
-   --background-hover: rgba(255, 255, 255, 0.1);
-   --background-light: #AAA;
-   --background-bright: #FFF;
+    --bg-hover: rgba(255, 255, 255, 0.1);
 
-   --border-dim: #666;
-   --border-bright: var(--primary);
+    --grey: #494F56;
 
-   --text-bright: #FFF;
-   --text-special: var(--primary);
-
-   --scrollbar-background: #000;
-   --scrollbar-border: var(--primary);
+    --scrollbar-background: #000;
+    --scrollbar-border: var(--primary);
 }
 
 h1, h2, h3, h4 {
-  color: var(--text);
+  color: var(--bg-contrast-medium);
 }
 
 .popover_mask {
@@ -46,9 +44,9 @@ h1, h2, h3, h4 {
 
 /* Team Picker */
 .TeamSidebar, .TeamSidebar .StoplightContainer, .TeamSidebar .TeamSidebar-addArea {
-   background-color: var(--background) !important;
-   box-shadow: var(--background) 1px 1px 25px;
-   color: var(--text);
+   background-color: var(--bg) !important;
+   box-shadow: var(--bg) 1px 1px 25px;
+   color: var(--bg-contrast-medium);
    z-index: 1;
 }
 
@@ -57,21 +55,21 @@ h1, h2, h3, h4 {
 /*.TeamSidebar, .TeamSidebar .StoplightContainer, .TeamSidebar .TeamSidebar-addArea {*/
 /*nav.p-channel_sidebar {*/
 div.client_channels_list_container {
-   background-color: var(--background-elevated) !important;
-   box-shadow: var(--background-elevated) 1px 1px 25px;
-   color: var(--text);
+   background-color: var(--surface) !important;
+   box-shadow: var(--surface) 1px 1px 25px;
+   color: var(--bg-contrast-medium);
    z-index: 1;
 }
 
 nav.p-channel_sidebar {
-   background-color: var(--background-elevated);
-   color: var(--text);
+   background-color: var(--surface);
+   color: var(--bg-contrast-medium);
 }
 
 #team_menu,
 body:not(.loading) #team_menu:hover,
 body:not(.loading) #team_menu:active {
-   background-color: var(--background-elevated) !important;
+   background-color: var(--surface) !important;
 }
 
 .p-channel_sidebar__channel,
@@ -82,7 +80,7 @@ body:not(.loading) #team_menu:active {
 .p-channel_sidebar__link:visited,
 .p-channel_sidebar__channel:hover,
 .p-channel_sidebar__link:hover {
-   color: var(--text) !important;
+   color: var(--bg-contrast-medium) !important;
 }
 
 /* Channel with unread messages */
@@ -91,12 +89,12 @@ body:not(.loading) #team_menu:active {
 .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
 .p-channel_sidebar__section_heading_label--clickable:hover,
 .p-channel_sidebar__quickswitcher:hover {
-   color: var(--text-bright) !important;
+   color: var(--bg-contrast-high) !important;
 }
 
 /*broken*/
 __TODO-highlight-indicator {
-   background-color: var(--border-bright) !important;
+   background-color: var(--bg-contrast-high) !important;
    opacity: 1;
 }
 
@@ -105,7 +103,7 @@ __TODO-highlight-indicator {
 ts-jumper input[type="text"],
 .supports_custom_scrollbar:not(.slim_scrollbar) #col_channels:hover #channels_scroller::-webkit-scrollbar-track,
 #channel_header_info, #channel_topic_text, #channel_topic_text code, #edit_topic_inner:before {
-  background: var(--background) !important;
+  background: var(--bg) !important;
 }
 
 .channel_header, #col_messages, #footer {
@@ -120,7 +118,7 @@ ts-jumper input[type="text"],
 }
 
 .p-channel_sidebar__channel a {
-  color: var(--text);
+  color: var(--bg-contrast-medium);
 }
 
 .p-channel_sidebar__static_list div {
@@ -143,9 +141,9 @@ ts-jumper input[type="text"],
 
 .p-channel_sidebar__channel:hover,
 .p-channel_sidebar__link:hover{
-   background-color: var(--background-hover) !important;
+   background-color: var(--bg-accent) !important;
    border-color: transparent;
-   color: var(--text) !important;
+   color: var(--bg-contrast-medium) !important;
    height: 24px !important;
 }
 
